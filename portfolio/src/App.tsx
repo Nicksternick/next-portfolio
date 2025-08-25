@@ -5,10 +5,8 @@ import {
     Routes
 } from 'react-router-dom'
 import '../portfolio.css'
+import Home from './routes/Home.tsx'
 
-function Home() {
-    return <h1>Home Page</h1>;
-}
 
 function About() {
     return <h1>About Page</h1>;
@@ -30,19 +28,24 @@ function App() {
                                     Home
                                 </Link>
                                 <Link to="/about" className="navbar-item">
-                                    About
+                                    Projects
                                 </Link>
                                 <Link to="/contact" className="navbar-item">
-                                    Contact
+                                    Comics
                                 </Link>
                             </div>
                         </div>
                     </nav>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
-                    </Routes>
+                    <div className="section has-background-warning">
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/contact" element={<Contact />} />
+                        </Routes>
+                    </div>
+                    <div className="footer">
+                        Nicholas DiGiovanni ©2025
+                    </div>
                 </div>
             </BrowserRouter>
         </>
