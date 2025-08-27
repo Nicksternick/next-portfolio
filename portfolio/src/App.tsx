@@ -18,37 +18,35 @@ function Contact() {
 
 function App() {
     return (
-        <>
-            <BrowserRouter>
-                <div className="section">
-                    <nav className="navbar has-background-primary">
-                        <div className="navbar-menu">
-                            <div className="navbar-start">
-                                <Link to="/" className="navbar-item">
-                                    Home
-                                </Link>
-                                <Link to="/about" className="navbar-item">
-                                    Projects
-                                </Link>
-                                <Link to="/contact" className="navbar-item">
-                                    Comics
-                                </Link>
-                            </div>
+        <BrowserRouter>
+            <div className="container">
+                <nav className="navbar has-background-primary">
+                    <div className="navbar-menu">
+                        <div className="navbar-start">
+                            <Link to="/" className="navbar-item">
+                                Home
+                            </Link>
+                            <Link to="/about" className="navbar-item">
+                                Projects
+                            </Link>
+                            <Link to="/contact" className="navbar-item">
+                                Comics
+                            </Link>
                         </div>
-                    </nav>
-                    <div className="section has-background-warning">
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/about" element={<About />} />
-                            <Route path="/contact" element={<Contact />} />
-                        </Routes>
                     </div>
-                    <div className="footer">
-                        Nicholas DiGiovanni ©2025
-                    </div>
+                </nav>
+                <div className="section has-background-warning">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
                 </div>
-            </BrowserRouter>
-        </>
+                <div className="footer">
+                    Nicholas DiGiovanni ©2025
+                </div>
+            </div>
+        </BrowserRouter>
     )
 }
 
