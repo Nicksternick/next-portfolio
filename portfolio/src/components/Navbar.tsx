@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../css/navbar.css'
+import './../css/navbar.css'
 
 export default function Navbar() {
     const[IsActive, SetIsActive] = useState(false)
 
     return (
-        <nav className="navbar">
+        <nav className={`navbar`}>
             <div className="navbar-brand">
                 <Link to="/" className='navbar-item'>
                     <img src="https://placehold.co/40" alt="" />
@@ -24,19 +24,19 @@ export default function Navbar() {
             </div>
             <div className={`navbar-menu  ${IsActive ? 'is-active' : ''}`}>
                 <div className="navbar-start">
-                    <Link to="/" className="navbar-item">
+                    <Link to="/" className="navbar-item nav-link">
                         <a className='link'>Home</a>
                     </Link>
-                    <Link to="/about" className="navbar-item">
+                    <Link to="/projects" className="navbar-item nav-link">
                         <a className='link'>Projects</a>
                     </Link>
-                    <Link to="/contact" className="navbar-item">
+                    <Link to="/contact" className="navbar-item nav-link">
                         <a className='link'>Contact</a>
                     </Link>
-                    <Link to="" className="navbar-item">
+                    <Link to="" className="navbar-item nav-link">
                         <a className='link'>Art Gallery</a>
                     </Link>
-                    <Link to="" className="navbar-item">
+                    <Link to="" className="navbar-item nav-link">
                         <a className='link'>Comics</a>
                     </Link>
                 </div>

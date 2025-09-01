@@ -3,16 +3,18 @@ import {
     Route,
     Routes
 } from 'react-router-dom'
-import '../portfolio.css'
+
+// Routes
 import Home from './routes/Home.tsx'
+import Projects from './routes/Projects.tsx';
+
+// Components
 import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
+
+// CSS
 import './css/App.css'
 
-
-function About() {
-    return <h1>About Page</h1>;
-}
 
 function Contact() {
     return <h1>Contact Page</h1>;
@@ -26,7 +28,7 @@ function App() {
                 <div id='main' className="section">
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
+                        <Route path="/projects/*" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </div>

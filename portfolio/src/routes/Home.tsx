@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 export default function Home() {
     return (
         <div className="columns">
-                <div className="column">
+                <div className="column is-hidden-mobile">
                     <div className="content">
-                        <h1 className="title is-underlined">Directory</h1>
+                        <h1 className="title">Directory</h1>
                     </div>
                     <div className="container">
                         <Link to="/about">
@@ -17,12 +17,12 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="column is-two-fifths">
-                    <h1 className="title content has-text-centered is-underlined">Nicholas DiGiovanni</h1>
+                    <h1 className="title content has-text-centered">Nicholas DiGiovanni</h1>
                     <div className="container has-text-centered">
                         <img src="https://placehold.co/450" alt=""/>
                     </div>
                     <div className="content">
-                        <h2 className="is-underlined">Background</h2>
+                        <h2 className="">Background</h2>
                         <p>
                             I go by Nick. I am a programmer, storywriter, and artist.
                             I have a Bachelors of Science in Game Design and Development.

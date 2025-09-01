@@ -1,4 +1,4 @@
-.navbar {
+.navbar, .navbar-brand {
     background-color: #CF4D6F;
 }
 
@@ -6,6 +6,14 @@
     background-color: #CF4D6F;
 }
 
-a {
+.link, span {
     color: #FFFD82;
+}
+
+.nav-link:hover {
+    background-color: #aa3f5c;
+}
+
+.nav-link:focus {
+    background-color: #7e2e43;
 }

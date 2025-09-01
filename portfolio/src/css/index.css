@@ -5,6 +5,7 @@ h1, h2 {
     font-weight: 400;
     font-style: normal;
     color: #2F2F2F;
+    text-decoration: underline;
 }
 
 p {
