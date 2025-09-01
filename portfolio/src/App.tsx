@@ -7,7 +7,7 @@ import '../portfolio.css'
 import Home from './routes/Home.tsx'
 import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
-import './App.css'
+import './css/App.css'
 
 
 function About() {
