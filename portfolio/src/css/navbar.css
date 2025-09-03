@@ -10,10 +10,10 @@
     color: #FFFD82;
 }
 
-.nav-link:hover {
+.nav-link:hover, .navbar-item:hover {
     background-color: #aa3f5c;
 }
 
-.nav-link:focus {
+.nav-link:focus, .navbar-item:focus {
     background-color: #7e2e43;
 }
