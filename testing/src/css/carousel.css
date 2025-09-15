@@ -1,0 +1,13 @@
+.c-body {
+    aspect-ratio: 16 / 10;
+    border-radius: 30px;
+}
+
+.c-image {
+    height: 100%;
+    transition: height 2s;
+}
+
+.c-image:hover {
+    height: 50%;
+}
