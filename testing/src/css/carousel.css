@@ -1,6 +1,13 @@
+.c-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
 .c-body {
     aspect-ratio: 16 / 10;
     border-radius: 30px;
+    overflow: hidden;
+    position: relative;
 }
 
 .c-image {
@@ -8,6 +15,33 @@
     transition: height 2s;
 }
 
-.c-image:hover {
-    height: 50%;
+.c-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
 }
+
+.c-arrow:hover {
+    background: rgba(87, 87, 87, 0.5);
+}
+
+.c-prev {
+  left: 10px;
+  margin-left: 5px;
+}
+
+.c-next {
+  right: 10px;
+  margin-right: 5px;
+}
+
+/* .c-image:hover {
+    height: 50%;
+} */
